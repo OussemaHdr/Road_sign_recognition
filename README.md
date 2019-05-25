@@ -1,4 +1,5 @@
-# Self driving car Prototype (Mercury 1.0) : Traffic sign recognition
+# Self driving car Prototype (Mercury 1.0) :   
+# Traffic sign recognition  
 Mercury is a WIP prototype of a self driving car, the first model focuses on traffic sign recognition using Deep Learning (CNN).  
 Dataset : [German Traffic Sign Dataset](http://benchmark.ini.rub.de/?section=gtsrb&subsection=dataset)  
   
@@ -14,4 +15,5 @@ Signs the AI currently recognizes :
 * Python3.7, Jupyter, NumPy, SciPy, TensorFlow, Keras, Matplotlib, Pandas, OpenCV, Skimage, pillow  
 * OS (RaspberryPi) : Raspbian  
 ### 2. Hardware  
-* RaspberryPi 3 B+, 8MP PiCamera, 2DC motors, L298n h-bridge
+* RaspberryPi 3 B+, 8MP PiCamera, 2DC motors, L298n h-bridge, 2 KY 033 optic sensors  
+###### NB : We used optic sensors to keep the robot movement in a straight line, if you are planing to use 4 DC motors or others alternatives you won't need them
