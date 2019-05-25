@@ -69,10 +69,6 @@ def sstop():
     pwmL.stop()
     pwmR.stop()
 
-def cap():
-    CLeft=GPIO.input(40)
-    CRight=GPIO.input(19)
-
 def LineFollow():
     L1=[]
     if((GPIO.input(40)== False) and (GPIO.input(19)==False)):
@@ -83,8 +79,8 @@ def LineFollow():
         rotRight()
     if((GPIO.input(40)== True) and (GPIO.input(19)==True)):
         ImgCapture()
-        prepare('/home/pi/stop.jpg')
-        L1=predictt('/home/pi/stop.jpg')
+        prepare('/home/pi/sign.jpg')
+        L1=predictt('/home/pi/sign.jpg')
         if(L1[0]==4):
             sstop()
             sleep(5)
