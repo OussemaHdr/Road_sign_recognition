@@ -1,7 +1,7 @@
 # Self driving car Project "Mercury"
 ## Objectif: Building a traffic signs classifier  
 ### 1. Organizing test images  
-Unlike the training images the data provided for the test is not organasied per class  
+Unlike the training images the data provided for the test is not organsied per class  
 ```python
 data = pd.read_csv('.../GT-final_test.csv', sep=';')
 pictures_folder = '...'
