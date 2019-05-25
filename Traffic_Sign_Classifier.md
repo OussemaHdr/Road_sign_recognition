@@ -162,5 +162,20 @@ classifier.fit_generator(training_set,
                          validation_steps=100,
                          shuffle=True,callbacks=[tensorboard])
 ```  
-### 5. Training results
+### 5. Training results  
+Batch accuracy :  
+  
+![alt text](Images/batch_acc.png "batch_acc")  
+  
+Bactch loss :  
+  
+![alt text](Images/batch_loss.png "batch_loss")  
+  
+Val accuracy :  
+  
+![alt text](Images/val_acc.png "val_acc")  
+  
+Val loss :  
+  
+![alt text](Images/val_loss.png "val_loss")  
 
