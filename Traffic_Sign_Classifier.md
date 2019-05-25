@@ -24,7 +24,7 @@ Since we plan to implement this model in a robot using RaspberryPi we decided to
 | Num | Sign |  
 | --- | --- |  
 | 2 | Speed limit (50km/h) |  
-| 8 | Speed limit (120km/h) |  
+| 7 | Speed limit (100km/h) |  
 | 14 | Stop |  
 | 33 | Turn right | 
 | 34 | Turn left |  
