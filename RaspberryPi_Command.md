@@ -4,7 +4,7 @@
 ###### NB : This may take arround 2-3 mins  
 ```python
 from keras.models import load_model
-classifier = load_model('/home/pi/SignRec-CNN_3.h5')
+classifier = load_model('/home/pi/SignRec-CNN.h5')
 ```  
 ### 2. GPIO setup  
 ```python
