@@ -2,9 +2,9 @@ from PIL import Image, ImageFilter, ImageChops
 import os
 
 #prints number of pic in every folder
-labels = os.listdir("../data/train")
+labels = os.listdir(".../data/train")
 for label in labels: 
-	number_files = len(os.listdir("C:/Users/SBS/Desktop/pfa/data/train/" + label))
+	number_files = len(os.listdir(".../data/train/" + label))
 	print ("number of files in ", label, number_files) 
 	
 def augment_data(label_path):
