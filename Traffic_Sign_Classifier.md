@@ -144,12 +144,12 @@ train_datagen = ImageDataGenerator(rescale=1. / 255,
 
 test_datagen = ImageDataGenerator(rescale=1. / 255)
 
-training_set = train_datagen.flow_from_directory("C:/Users/SBS/Desktop/pfa/data (with 100)/train",
+training_set = train_datagen.flow_from_directory(".../data/train",
                                                  target_size=(32, 32),
                                                  batch_size=32,
                                                  class_mode='categorical')
 
-test_set = test_datagen.flow_from_directory("C:/Users/SBS/Desktop/pfa/data (with 100)/test",
+test_set = test_datagen.flow_from_directory(".../data/test",
                                             target_size=(32, 32),
                                             batch_size=32,
                                             class_mode='categorical')
