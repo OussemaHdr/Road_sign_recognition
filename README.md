@@ -10,7 +10,7 @@ Here's an overview of Mercury 1.0 :
 Signs the AI currently recognizes :  
   
 ![alt text](Images/Signs.png "Signs")  
-###### NB : The AI is only trained with 5 signs (50, 120, Right, Left, Stop) but the variation the dataset allows him to recognize all the signs displayed above.  
+###### NB : The AI is only trained with 5 signs (50, 120, Right, Left, Stop) but the variation the dataset allows it to recognize all the signs displayed above.  
 ### 1. Dependencies  
 * Python3.7, Jupyter, NumPy, SciPy, TensorFlow, Keras, Matplotlib, Pandas, OpenCV, Skimage, pillow  
 * OS (RaspberryPi) : Raspbian  
