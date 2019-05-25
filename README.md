@@ -16,4 +16,5 @@ Signs the AI currently recognizes :
 * OS (RaspberryPi) : Raspbian  
 ### 2. Hardware  
 * RaspberryPi 3 B+, 8MP PiCamera, 2DC motors, L298n h-bridge, 2 KY 033 optic sensors  
-###### NB : We used optic sensors to keep the robot movement in a straight line, if you are planing to use 4 DC motors or other alternatives you won't need them
+###### NB : We used optic sensors to keep the robot movement in a straight line, if you are planing to use 4 DC motors or other alternatives you won't need them  
+[**Video demonstration**](https://www.youtube.com/watch?v=oamXh6avUcY&feature=youtu.be)
