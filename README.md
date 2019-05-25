@@ -2,7 +2,7 @@
 Mercury is a WIP prototype of a self driving car, the first model focuses on traffic sign recognition using Deep Learning (CNN).  
 Dataset : [German Traffic Sign Dataset](http://benchmark.ini.rub.de/?section=gtsrb&subsection=dataset)  
   
-Here's our an overview :  
+Here's an overview :  
   
 ![alt text](Images/Overview.jpg "Mercury 1.0") 
   
