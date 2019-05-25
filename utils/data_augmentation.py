@@ -1,22 +1,12 @@
 from PIL import Image, ImageFilter, ImageChops
 import os
 
-
-#count number of files
+#prints number of pic in every folder
 labels = os.listdir("../data/train")
-
-"""
 for label in labels: 
 	number_files = len(os.listdir("C:/Users/SBS/Desktop/pfa/data/train/" + label))
 	print ("number of files in ", label, number_files) 
-
-
-50: 2251
-100: 1441 * 1.5
-left: 421*5
-right: 690*3
-stop: 781 * 3
-"""
+	
 def augment_data(label_path):
 	label = label_path.split('/')[-1]
 	if label == "120":
@@ -27,7 +17,7 @@ def augment_data(label_path):
 			img = Image.open(label_path + "/" + file)
 			img_rotate_90 = img.rotate(90)
 			img_rotate_90.save(label_path + "/" + file_name + "rotate_90." + file_ext)
-"""	if label == "Stop":
+	if label == "Stop":
 			files = os.listdir(label_path)
 			for file in files:
 				file_name = file.split(".")[0]
@@ -61,7 +51,6 @@ def augment_data(label_path):
 				img_edge.save(label_path + "/" + file_name + "edge." + file_ext)
 				img_gaussian.save(label_path + "/" + file_name + "gaussian." + file_ext)
 				img_invert.save(label_path + "/" + file_name + "invert." + file_ext)
-"""
 
 for label in labels:
 	print("augmenting data in ", label)
