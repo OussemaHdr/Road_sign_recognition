@@ -87,8 +87,8 @@ def LineFollow():
         rotRight()
     if((GPIO.input(40)== True) and (GPIO.input(19)==True)):
         ImgCapture()
-        prepare('/home/pi/stop.jpg')
-        L1=predictt('/home/pi/stop.jpg')
+        prepare('/home/pi/sign.jpg')
+        L1=predictt('/home/pi/sign.jpg')
         if(L1[0]==4):
             sstop()
             sleep(5)
@@ -112,5 +112,61 @@ def ImgCapture():
     sleep(0.1)
     camera.capture('/home/pi/sign.jpg')
 ```  
-### 6.
+### 6. Preparing the captured image  
+```python  
+def prepare(path):
+    img = Image.open(path)
+    img_reshaped = img.resize((32, 32))
+    img_rotated = img_reshaped.rotate(180)
+    img_rotated.save(path)
+    img = Image.open(path)
+    img = np.expand_dims(img, axis = 0)
+    img = img/255
+    return img
+```  
+### 7. Predict function 
+```python
+def predictt(path):
+	prediction = classifier.predict([prepare(path)])
+	L1=[]
+	prediction
+	n=(np.argmax(prediction))
+	X=prediction[0][n]
+	#print(np.argmax(prediction))
+	L1.append(n)
+	L1.append(X)
+	return L1
+```  
+### 8. Loop
+```python
+screen=curses.initscr()
+curses.noecho()
+curses.cbreak()
+screen.keypad(True)
+try:
+    while True:
+        char= screen.getch()
+        if char== ord('q'):
+            break
+        if char== ord('S'):
+            os.system("sudo shutdown now")
+        if char == ord('a'):
+            while True:
+               LineFollow()
+        elif char== curses.KEY_DOWN:
+            Back()
+        elif char== curses.KEY_RIGHT:
+            rotRight()
+        elif char== curses.KEY_LEFT:
+            rotLeft()
+        elif char== curses.KEY_UP:
+            Forward()
+        elif char== 10:
+            sstop()
+
+finally:
+    curses.nocbreak(); screen.keypad(0); curses.echo()
+    curses.endwin()
+    GPIO.cleanup()
+```    
           
