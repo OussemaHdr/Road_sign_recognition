@@ -7,7 +7,7 @@ data = pd.read_csv('.../GT-final_test.csv', sep=';')
 pictures_folder = '...'
 target = 'Test_full'
 
-#creating multiple folders inside the main folder (tsawer) 
+#creating multiple folders inside the main folder 
 for i in range (0,43):
         os.mkdir('.../Test_full/' + str(i))
 
