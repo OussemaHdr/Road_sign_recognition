@@ -1,4 +1,4 @@
-# Self driving car Project "Mercury"
+# Smart car Project "Mercury"
 ## Objectif: Building a traffic signs classifier  
 ### 1. Organizing test images  
 Unlike the training images the data provided for the test is not organsied per class  
