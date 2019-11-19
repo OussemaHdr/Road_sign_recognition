@@ -1,4 +1,4 @@
-# Self driving car Project "Mercury"
+# Smart car Project "Mercury"
 ## Raspberry Pi comand    
 ### 1. Model loading  
 ###### NB : This may take arround 2-3 mins  
